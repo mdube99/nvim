@@ -47,7 +47,7 @@ return packer.startup(function(use)
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "numToStr/Comment.nvim" -- Easily comment stuff
   use "kyazdani42/nvim-web-devicons"
-  use "kyazdani42/nvim-tree.lua"
+  -- use "kyazdani42/nvim-tree.lua"
   use "akinsho/bufferline.nvim"
   use "moll/vim-bbye"
   use "nvim-lualine/lualine.nvim"
@@ -58,10 +58,25 @@ return packer.startup(function(use)
   use "goolord/alpha-nvim"
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
+  use "karb94/neoscroll.nvim"
+
+  --tpope
+  use "tpope/vim-fugitive"
+  use "tpope/vim-surround"
+
+  -- misc
+  use "lambdalisue/suda.vim"
+  use "simrat39/symbols-outline.nvim"
+  use "folke/todo-comments.nvim"
+  use { "christianchiarulli/nvim-gps", branch = "text_hl" }
+  use "RishabhRD/nvim-cheat.sh"
+
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use "lunarvim/darkplus.nvim"
+  use "folke/tokyonight.nvim"
+  use "catppuccin/nvim"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
